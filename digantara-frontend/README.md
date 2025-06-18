@@ -13,6 +13,6 @@ Clone the repo and install dependencies:
 
 ```bash
 git clone https://github.com/PeyacisSmagla/drt_react_peyacis.git
-cd drt_react_gouravk
+cd drt_react_peyacis
 npm install
 ```
