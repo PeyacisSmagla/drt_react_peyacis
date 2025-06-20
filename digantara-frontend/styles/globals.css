@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #ffffff;
-  --color-text: #171717;
+  /* --color-bg: #0d051a; */
+  --color-text: #feffff;
 
-  --color-primary: #2563eb;
-  --color-primary-light: #3b82f6;
-  --color-secondary: #10b981;
-  --color-secondary-light: #34d399;
+  --color-secondary: #5e5f62;
+  --proceed-btn-bg: #01c7f8;
+
+  --selected-title: #207d8f;
+
+  --light-text: #9b98a2;
 }
 
 @media (prefers-color-scheme: dark) {
