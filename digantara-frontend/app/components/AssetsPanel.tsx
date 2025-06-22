@@ -89,9 +89,7 @@ export default function AssetsPanel() {
   useEffect(() => {
     const fetchSatellites = async () => {
       try {
-        const res = await fetch(
-          "https://backend.digantara.dev/v1/satellites?attributes=noradCatId,intlDes,name,launchDate,objectType,orbitCode,countryCode"
-        );
+        const res = await fetch("/api/satellites");
         const result = await res.json();
         setAllSatellites(result?.data ?? []);
       } catch (err) {
