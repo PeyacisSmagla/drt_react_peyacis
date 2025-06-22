@@ -1,4 +1,4 @@
-import { Satellite } from "../types/Satellite";
+import { Satellite } from "../app/types/Satellite";
 
 export const saveSelected = (items: Satellite[]) => {
   localStorage.setItem("selectedSatellites", JSON.stringify(items));

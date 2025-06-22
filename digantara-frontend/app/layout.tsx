@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import '../styles/globals.css';
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Digantara Satellite Tracker",
   description: "Track and analyze space objects with Digantara",
-  icons : {
-    icon : '/satellite.svg'
-  }
+  icons: {
+    icon: "/satellite.svg",
+  },
 };
 
 export default function RootLayout({
@@ -30,9 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[var(--color-bg)] text-[var(--color-text)]`}
       >
-        <div className="min-h-screen flex flex-col">
-          {children}
-        </div>
+        <div className="min-h-screen flex flex-col">{children}</div>
       </body>
     </html>
   );

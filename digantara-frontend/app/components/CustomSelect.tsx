@@ -53,7 +53,7 @@ const CustomMultiSelect: React.FC<CustomMultiSelectProps> = ({
   return (
     <div
       ref={dropdownRef}
-      className="relative text-xs min-w-[250px] max-w-[200px] flex-shrink-0"
+      className="relative text-xs md:min-w-[250px] md:max-w-[200px] flex-shrink-0"
     >
       <button
         type="button"
@@ -65,6 +65,8 @@ const CustomMultiSelect: React.FC<CustomMultiSelectProps> = ({
         </span>
         <FiChevronDown className="text-gray-400 ml-2" size={16} />
       </button>
+
+
 
       {open && (
         <div className="absolute z-10 mt-1 w-full bg-[#1f1f1f] rounded-xl border border-gray-700 shadow-md max-h-40 overflow-auto">
